@@ -1,0 +1,46 @@
+<div data-ng-controller="AlertsCtrl">
+  <div class="row">
+	   <div class="col-lg-4 col-md-6 col-xs-12">
+		     <rd-widget>
+      			<rd-widget-body>
+      				<div class="widget-icon green pull-left">
+      					<i class="fa fa-money"></i>
+      				</div>
+      				<div class="title">{{tipCount}}</div>
+      				<div class="comment">Today</div>
+      			</rd-widget-body>
+		      </rd-widget>
+	    </div>
+	   <div class="col-lg-4 col-md-6 col-xs-12">
+		<rd-widget>
+			<rd-widget-body>
+				<div class="widget-icon red pull-left">
+					<i class="fa fa-money"></i>
+				</div>
+				<div class="title">{{weekCount}}</div>
+				<div class="comment">This Week</div>
+			</rd-widget-body>
+		</rd-widget>
+	</div>
+	   <div class="col-lg-4 col-md-6 col-xs-12">
+		<rd-widget>
+			<rd-widget-body>
+				<div class="widget-icon orange pull-left">
+					<i class="fa fa-money"></i>
+				</div>
+				<div class="title">{{monthCount}}</div>
+				<div class="comment">This Month</div>
+			</rd-widget-body>
+		</rd-widget>
+	</div>
+  </div>
+
+  <div class="row">
+  	<div class="col-lg-6">
+      <highchart id="chart1" config="highchartsConfig"></highchart>
+  	</div>
+    <div class="col-lg-6">
+      <highchart id="chart2" config="highchartsConfig2"></highchart>
+  	</div>
+  </div>
+</div>
